@@ -14,6 +14,10 @@ public class TapAbleObject : MonoBehaviour {
 
 			if (Physics.Raycast(ray, out hit)){
 				dialog.SetActive (true);
+				SetCouponDialog coupon = dialog.GetComponent<SetCouponDialog> () as SetCouponDialog;
+				if (coupon != null) {
+					coupon.SetCouponInfoTest ();
+				}
 			}
 		}
 	}
