@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class TransitionToAddCafeScene : MonoBehaviour {
+public class LoadScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,11 @@ public class TransitionToAddCafeScene : MonoBehaviour {
 
 	}
 
-	public void SceneLoad () {
+	public void ToAddCafe () {
 		SceneManager.LoadScene("add_cafe");
+	}
+
+	public void ToProfile () {
+		SceneManager.LoadScene("profile");
 	}
 }
