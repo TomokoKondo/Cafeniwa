@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class MainController : MonoBehaviour {
 
 	public Text text;
-	public Canvas coupon_dialog;
 
 	// Use this for initialization
 	void Start () {
